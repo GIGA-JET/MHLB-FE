@@ -122,7 +122,7 @@ const WorkspaceConfig = () => {
       </StManageTitle>
 
       <StWorkspaceName>
-        <StSub>워크스페이스 프로필 이미지</StSub>
+        <StTitleBox>워크스페이스 프로필 이미지</StTitleBox>
         <StWorkspaceProfile>
           <StImgBox src={image}/>
           <StProfileImg />
@@ -132,7 +132,7 @@ const WorkspaceConfig = () => {
       </StWorkspaceName>
 
       <StWorkspaceName>
-        <StSub>워크스페이스 이름</StSub>
+        <StTitleBox>워크스페이스 이름</StTitleBox>
         <StEditBox>
           {
             editTitle
@@ -156,7 +156,7 @@ const WorkspaceConfig = () => {
       </StWorkspaceName>
 
       <StWorkspaceName>
-        <StSub>워크스페이스 설명</StSub>
+        <StTitleBox>워크스페이스 설명</StTitleBox>
         <StEditBox>
           {
             editDesc
@@ -178,7 +178,7 @@ const WorkspaceConfig = () => {
           }
         </StEditBox>
       </StWorkspaceName>
-      <StSub>멤버 추가 및 삭제</StSub>
+      <StTitleBox>멤버 추가 및 삭제</StTitleBox>
       
       <StSearchInviteBox>
         <StSearchUserInput onChange={(e)=>setSearch(e.target.value)} placeholder="Search People"/>
@@ -289,7 +289,7 @@ const StWorkspaceName = styled.div`
     cursor: pointer;
   }
 `;
-const StSub = styled.div`
+const StTitleBox = styled.div`
   
 `;
 const StEditBox = styled.div`
